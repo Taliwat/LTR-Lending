@@ -1,9 +1,11 @@
+const { Application } = require('express');
+
 const router = require('express').Router();
-// const {  } = require('../../models');
+const { Application } = require('../../models');
 
 router.get('/', async (req,res) =>{
 
-    res.send('<h1>Home page for the Lender');
+  res.send('<h1>Home page for the Lender');
 
 });
 
@@ -19,7 +21,7 @@ router.post('/login', async (req, res) => {
       }
   
       const validPassword = await loanOfficer.checkPassword(req.body.password);
-  
+
       if (!validPassword) {
         res
           .status(400)
@@ -29,8 +31,7 @@ router.post('/login', async (req, res) => {
   
       req.session.save(() => {
         req.session.user_id = userData.id;
-        req.session.logged_in = true;
-        
+        req.session.logged_in = true;        
         res.json({ user: userData, message: 'You are now logged in!' });
       });
   
@@ -47,6 +48,20 @@ router.post('/login', async (req, res) => {
     } else {
       res.status(404).end();
     }
+  });
+
+  //get application by type
+  router.get('/:type', async (req, res) => {
+    try {
+        const applicationData = await Application.findAll({
+            where: {type: req.params.type}
+        })
+    
+        res.status(200).json(applicationData)
+
+    } catch (err) {
+        res.status(400).json(err);
+      }
   });
 
 

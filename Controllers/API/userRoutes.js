@@ -4,7 +4,7 @@ const router = require('express').Router();
 
 router.get('/', async (req,res) =>{
 
-    res.send('<h1>Home page for the User');
+  res.send('<h1>Home page for the User');
 
 });
 
