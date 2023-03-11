@@ -2,12 +2,11 @@ const router = require('express').Router();
 // const { User } = require('../../models');
 
 
+router.get('/', async (req,res) =>{
 
-// router.get('/', async (req,res) =>{
+    res.send('<h1>Home page for the User');
 
-
-//     //get / application by loan type sort by most recent
-// });
+});
 
 // router.get('/', async (req,res) =>{
 
