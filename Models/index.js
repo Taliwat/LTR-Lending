@@ -6,7 +6,7 @@ Application.belongsTo(User, {
   foreignKey: 'user_id'
 });
 
-User.belongsTo(loanOfficer, {
+User.belongsTo(Application, {
   foreignKey: 'user_id'
 });
 

@@ -11,6 +11,10 @@ Application.init(
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
+      validate: {
+        isAlphanumeric: true,
+        len: [10]
+      }
     },
     user_id: {
       type: DataTypes.INTEGER,
@@ -29,14 +33,18 @@ Application.init(
     },
     ssn: {
       type: DataTypes.INTEGER,
-      allowNull: false
-
+      allowNull: false,
+      validate: {
+        isNumeric: true,
+        len: [9]              
     },
+  },
     income: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      validate: true,
       isInt: {
-        msg: "Must be an integer number of dollars"
+        msg: "Must be an integer amount of dollars"
       }
     },
     address: {
@@ -53,7 +61,7 @@ Application.init(
       allowNull: false,
       validate: true,
       isIn: {
-        args: [['Auto', 'Residential', 'Personal']],
+        args: [['Auto', 'Home', 'Personal']],
         msg: "Must be an Auto, Home or Personal Loan"
       }
     },
@@ -62,13 +70,21 @@ Application.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
+    amount_requested: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: true,
+      isInt: {
+        msg: "Must be an integer amount of dollars"
+      }
+    }
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'loanOfficer',
+    modelName: 'Application',
   }
 );
 
