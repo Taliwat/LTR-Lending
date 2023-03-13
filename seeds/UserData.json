@@ -1,0 +1,65 @@
+[
+  {
+    "id": "0135",
+    "first_name": "Sally",
+    "last_name": "Mae",
+    "email": "sallygotyomoney@hotmail.com",
+    "password":  "password12345"
+  },
+  {
+    "id": "3146",
+    "first_name": "Billy",
+    "last_name": "Thekidd",
+    "email": "Thekiddstilllives@aol.com",
+    "password":  "password12345"
+  },
+  {
+    "id": "4690",
+    "first_name": "Moes",
+    "last_name": "Tavernn",
+    "email": "moe1@yahoo.com",
+    "password":  "password12345"
+  },
+  {
+    "id": "3368",
+    "first_name": "Larry",
+    "last_name": "Simmons",
+    "email": "Larrythecableguy@gmail.com",
+    "password":  "password12345"
+  },
+  {
+    "id": "7429",
+    "first_name": "Wanda",
+    "last_name": "Maximoff",
+    "email": "Thekidsarereal@hotmail.com",
+    "password":  "password12345"
+  },
+  {
+    "id": "2895",
+    "first_name": "Clark",
+    "last_name": "Kent",
+    "email": "Kryptoking123@gmail.com",
+    "password":  "password12345"
+  },
+  {
+    "id": "1592",
+    "first_name": "Lois",
+    "last_name": "Lane",
+    "email": "Imarriedup00@aol.com",
+    "password":  "password12345"
+  },
+  {
+    "id": "9086",
+    "first_name": "Natasha",
+    "last_name": "Romanov",
+    "email": "Someoneelseshouldvejumped@yahoo.com",
+    "password":  "password12345"
+  },
+  {
+    "id": "5731",
+    "first_name": "Steven",
+    "last_name": "Strange",
+    "email": "Capeismyonlyfriend@gmail.com",
+    "password":  "password12345"
+  }
+]
