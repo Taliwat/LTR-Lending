@@ -4,7 +4,7 @@ const sequelize = require('../config/connection');
 
 class loanOfficer extends Model {
   checkPassword(loginPw) {
-  return bcrypt.compareSync(loginPw, this.password);
+    return bcrypt.compareSync(loginPw, this.password);
   }
 }
 
@@ -50,8 +50,8 @@ loanOfficer.init(
         updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
         return updatedUserData;
       },
-  },
-  
+    },
+
     sequelize,
     timestamps: false,
     freezeTableName: true,

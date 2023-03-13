@@ -16,7 +16,7 @@ Application.init(
       type: DataTypes.INTEGER,
       references: {
         model: 'User',
-        key: "id"
+        key: 'id'
       },
     },
     first_name: {
@@ -36,7 +36,7 @@ Application.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       isInt: {
-        msg: "Must be an integer number of dollars"
+        msg: 'Must be an integer number of dollars'
       }
     },
     address: {
@@ -54,7 +54,7 @@ Application.init(
       validate: true,
       isIn: {
         args: [['Auto', 'Residential', 'Personal']],
-        msg: "Must be an Auto, Home or Personal Loan"
+        msg: 'Must be an Auto, Home or Personal Loan'
       }
     },
     date_created: {
