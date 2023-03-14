@@ -3,13 +3,18 @@ margin: 0;
 padding: 0;
 }
 
+html, body {
+    height: 100%;
+  }
+
 body{
 display: flex;    
 flex-direction: column;
 background-color: aqua;
+
 }
 
-.header{
+.header{    
 display: flex;
 background-color: coral;
 justify-content: space-around;
@@ -17,26 +22,57 @@ min-height: 100px;
 align-items: center;
 }
 
-.nav,
-.footerNav{
+.nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }  
 
-.navButton
-
-{
+.navButton{
     padding: 15px;
+    font-weight: 700;
+}
+
+.navButton:hover {
+    cursor: grab;    
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 5em;
+
+}
+#image {
+    display: flex;
+    border-radius: 2em;
+    align-items: center;
+ 
 }
 
 .footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color: coral;
     min-height: 100px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-weight: 700;
+}
+.footerNav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.footer a:hover {
+    cursor: grab;
 }
 
 .about{
-    padding: 15px;
+    padding: 40px;
 }

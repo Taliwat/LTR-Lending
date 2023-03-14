@@ -2,10 +2,12 @@ const router = require('express').Router();
 const { User, Application } = require('../../models');
 
 //gets the home page for the user (still need to incorp Handlebars)
-router.get('/', async (req,res) =>{
+router.get('/login', async (req, res) => {
+  res.render('login');
+});
 
-  res.send('<h1>Home page for the User');
-
+router.get('/signup', async (req, res) => {
+  res.render('signup');
 });
 
 //post route - should work for when the user submits the loan
@@ -25,6 +27,7 @@ router.post('/', async (req, res) => {
 
 //user login route
 router.post('/login', async (req, res) => {
+
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
 
