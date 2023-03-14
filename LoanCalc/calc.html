@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>Loan Calculator</title>
 </head>
-<body class="light orange">
+<body class="#18ffff cyan accent-2">
     <div class="container shadow rounded-3 p-3 white my-5">
         <h1 class="display-3 text-center">Loan Calculator</h1>  
         <form id="loan">
@@ -30,7 +30,7 @@
                 <div class="data-field">
                     <input type="number" class="autocomplete"
                     id="loanAmount" readonly placeholder="LoanAmount" />
-                    <label>Loan Amount</label>
+                    <label>Final Loan Amount</label>
                 </div>
                 <div class="data-field">
                     <input type="text" class="autocomplete"
@@ -38,16 +38,16 @@
                     <label>Interest Rate</label>
                 </div>
                 <div class="data-field">
-                    <input type="number" class="autocomplete"
+                    <input type="text" class="autocomplete"
                     id="loanDuration" />
                     <label>Loan Duration (years)</label>
                 </div>
             </main>
             <footer class="row-cols-1 align-items-center m-5">
                 <button class="btn btn-large" type="submit">Calculate</button>
-                <button class="btn btn-large rounded-pill light green mt-5" type="button">
+                <button class="btn btn-large rounded-pill light green mt-5" type="submit">
                     <b style="text-shadow: 1px 1px 1px black">
-                        Est Monthly Payment <span id="monthlyPayment"></span>                    
+                        Est. Monthly Payment: <span id="monthlyPayment"></span>                    
                     </b>
                 </button>
             </footer>
