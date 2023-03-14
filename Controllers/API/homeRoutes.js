@@ -1,27 +1,26 @@
 const router = require('express').Router();
-
+const { User, Application, loanOfficer} = require('../../models');
 
 
 router.get('/', async (req, res) => {
-    res.send('<h1>Welcome to LTR Lending!</h1>');
+  res.send('<h1>Welcome to LTR Lending!</h1>');
 });
 
 
-// router.get('/', async (req,res) =>{
+// GET loan officer by ID
+router.get('/:id', async (req, res) => {
+  try {
+    const loanOfficer = await LoanOfficer.findByPk(req.params.id);
+    if (!loanOfficer) {
+      return res.status(404).json({ error: 'Loan officer not found' });
+    }
+    res.json(loanOfficer);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Server error' });
+  }
+});
 
-//     // get / about Londa
-
-// });
-
-// router.get('/', async (req,res) =>{
-
-//     // get /about Ryan
-
-// });
-
-// router.get('/', async (req,res) =>{
-
-//     // get/ about Tommy
 
 
 module.exports = router;
