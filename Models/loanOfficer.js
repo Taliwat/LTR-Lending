@@ -42,13 +42,13 @@ loanOfficer.init(
   },
   {
     hooks: {
-      beforeCreate: async (newUserData) => {
-        newUserData.password = await bcrypt.hash(newUserData.password, 10);
-        return newUserData;
+      beforeCreate: async (newloanOfficerData) => {
+        newloanOfficerData.password = await bcrypt.hash(newloanOfficerData.password, 10);
+        return newloanOfficerData;
       },
-      beforeUpdate: async (updatedUserData) => {
-        updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
-        return updatedUserData;
+      beforeUpdate: async (updatedloanOfficerData) => {
+        updatedloanOfficerData.password = await bcrypt.hash(updatedloanOfficerData.password, 10);
+        return updatedloanOfficerData;
       },
     },
 

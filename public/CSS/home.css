@@ -1,0 +1,42 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+body{
+display: flex;    
+flex-direction: column;
+background-color: aqua;
+}
+
+.header{
+display: flex;
+background-color: coral;
+justify-content: space-around;
+min-height: 100px;
+align-items: center;
+}
+
+.nav,
+.footerNav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}  
+
+.navButton
+
+{
+    padding: 15px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: coral;
+    min-height: 100px;
+}
+
+.about{
+    padding: 15px;
+}
