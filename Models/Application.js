@@ -36,15 +36,15 @@ Application.init(
       allowNull: false,
       validate: {
         isNumeric: true,
-        len: [9]              
+        len: [9]
+      },
     },
-  },
     income: {
       type: DataTypes.INTEGER,
       allowNull: false,
       validate: true,
       isInt: {
-        msg: "Must be an integer amount of dollars"
+        msg: 'Must be an integer amount of dollars'
       }
     },
     address: {
@@ -62,7 +62,7 @@ Application.init(
       validate: true,
       isIn: {
         args: [['Auto', 'Home', 'Personal']],
-        msg: "Must be an Auto, Home or Personal Loan"
+        msg: 'Must be an Auto, Home or Personal Loan'
       }
     },
     date_created: {
@@ -75,7 +75,7 @@ Application.init(
       allowNull: false,
       validate: true,
       isInt: {
-        msg: "Must be an integer amount of dollars"
+        msg: 'Must be an integer amount of dollars'
       }
     }
   },

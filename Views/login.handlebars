@@ -1,0 +1,64 @@
+<body>
+	<form action="process-login.php" method="post">
+	<h1>Login</h1>
+		<label for="email">Email:</label>
+		<input type="text" id="username" name="username" required>
+		<br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+		<br>
+		<button type="submit">Login</button>
+		<button type="reset">Clear</button>
+	</form>
+</body>
+
+<head>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+
+		h1 {
+			padding: 1em;
+		}
+
+		form {
+			background-color: #fff;
+			padding: 20px;
+			margin: auto;
+			width: 400px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		input[type="text"],
+		input[type="password"] {
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			margin-bottom: 20px;
+		}
+
+		input[type="submit"],
+		input[type="reset"] {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			color: #fff;
+			background-color: #4CAF50;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover,
+		input[type="reset"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>

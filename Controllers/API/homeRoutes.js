@@ -3,7 +3,7 @@ const { User, Application, loanOfficer} = require('../../models');
 
 
 router.get('/', async (req, res) => {
-  res.send('<h1>Welcome to LTR Lending!</h1>');
+  res.render('home');
 });
 
 

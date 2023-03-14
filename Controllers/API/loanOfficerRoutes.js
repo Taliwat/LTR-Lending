@@ -1,10 +1,8 @@
 const router = require('express').Router();
 const { User, Application } = require('../../models');
 
-router.get('/', async (req,res) =>{
-
-  res.send('<h1>Home page for the Lender');
-
+router.get('/login', async (req, res) => {
+  res.render('loLogin');
 });
 
 router.post('/login', async (req, res) => {
