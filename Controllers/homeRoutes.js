@@ -19,6 +19,22 @@ router.get('/tommy', async (req, res) => {
   res.render('tommy');
 });
 
+router.get('/lologin', async (req, res) => {
+  res.render('lologin');
+});
+
+router.get('/login', async (req, res) => {
+  res.render('login');
+});
+
+router.get('/signup', async (req, res) => {
+  res.render('signup');
+});
+
+router.get('/about', async (req, res) => {
+  res.render('about');
+});
+
 // // GET loan officer by ID
 // router.get('/:id', async (req, res) => {
 //   try {
