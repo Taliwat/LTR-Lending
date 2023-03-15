@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { User, Application, loanOfficer} = require('../../models');
 
+//using api/home
 
 router.get('/', async (req, res) => {
   res.render('home');

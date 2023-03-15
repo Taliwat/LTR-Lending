@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const { User, Application } = require('../../models');
 
+//using api/user/
+
 //gets the home page for the user (still need to incorp Handlebars)
 router.get('/login', async (req, res) => {
   res.render('login');
