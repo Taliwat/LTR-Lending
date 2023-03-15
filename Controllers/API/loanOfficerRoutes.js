@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const { User, Application } = require('../../models');
 
+//using api/loanOfficer
+
 router.get('/login', async (req, res) => {
   res.render('loLogin');
 });
