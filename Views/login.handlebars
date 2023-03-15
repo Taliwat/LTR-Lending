@@ -1,8 +1,8 @@
 <body>
-	<form action="process-login.php" method="post">
+	<form action="api/user/login" method="post">
 	<h1>Login</h1>
 		<label for="email">Email:</label>
-		<input type="text" id="username" name="username" required>
+		<input type="text" id="email" name="email" required>
 		<br>
 		<label for="password">Password:</label>
 		<input type="password" id="password" name="password" required>
@@ -28,7 +28,7 @@
 			padding: 20px;
 			margin: auto;
 			width: 400px;
-			border-radius: 5px;
+			border-radius: 5px red;
 			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 		}
 
