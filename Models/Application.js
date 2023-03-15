@@ -11,10 +11,6 @@ Application.init(
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
-      validate: {
-        isAlphanumeric: true,
-        len: [10]
-      }
     },
     user_id: {
       type: DataTypes.INTEGER,

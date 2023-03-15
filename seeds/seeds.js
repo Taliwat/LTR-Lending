@@ -13,19 +13,14 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  for (const loanOfficer of loanOfficerData) {
-    await loanOfficer.create({
-      ...loanOfficer,
-      user_id: users[Math.floor(Math.random() * users.length)].id,
-    });
-  }
+  const officer = await loanOfficer.bulkCreate(loanOfficerData, {
+    individualHooks: true,
+    returning: true,
+  });
 
-  for (const Application of ApplicationData) {
-    await Application.create({
-      ...Application,
-      user_id: users[Math.floor(Math.random() * users.length)].id,
-    });
-  }
+
+  const app = await Application.bulkCreate(ApplicationData);
+
   process.exit(0);
 };
 
