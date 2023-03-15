@@ -17,6 +17,7 @@ min-height: 100px;
 align-items: center;
 }
 
+
 .nav,
 .footerNav{
     display: flex;
