@@ -35,6 +35,10 @@ router.get('/about', async (req, res) => {
   res.render('about');
 });
 
+router.get('/calc', async (req, res) => {
+  res.render('calc');
+});
+
 // // GET loan officer by ID
 // router.get('/:id', async (req, res) => {
 //   try {
