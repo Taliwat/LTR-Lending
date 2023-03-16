@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Loan Application Review</title>
+</head>
+<body class="#18ffff cyan accent-2">
+    <div class="container shadow rounded-3 p-3 white my-5">
+        <h1 class="display-3 text-center">Loan Officer Application Review</h1>  
+        <form id="loan">
+            <main class="row mx-5">
+                <div class="data-field">
+                    <input type="text" class="autocomplete"
+                    id="firstName" />
+                    <label>First Name</label>
+                </div>
+                <div class="data-field">
+                    <input type="text" class="autocomplete"
+                    id="lastName" />
+                    <label>Last Name</label>
+                </div>
+                <div class="data-field">
+                    <input type="text" class="autocomplete"
+                    id="ssn" />
+                    <label>SSN #</label>
+                </div>
+                <div class="data-field">
+                    <input type="text" class="autocomplete"
+                    id="incomeGross" />
+                    <label>Income (To be shown as your gross amount made last year)</label>
+                </div>
+                <div class="data-field">
+                    <input type="text" class="autocomplete"
+                    id="address" />
+                    <label>Address (Just your street and number please!)</label>
+                </div>
+                <div class="data-field">
+                    <input type="text" class="autocomplete"
+                    id="credit" />
+                    <label>Credit Score</label>
+                </div>
+                <div class="data-field">
+                    <input type="text" class="autocomplete"
+                    id="loanType" />
+                    <label>Loan Type (Auto, Home, or Personal)</label>
+                </div>
+                <div class="data-field">
+                    <input type="text" class="autocomplete"
+                    id="appDate" />
+                    <label>Application Date</label>
+                </div>
+                <div class="data-field">
+                    <input type="text" class="autocomplete"
+                    id="amountReq" />
+                    <label>Amount Requested</label>
+                </div>
+            </main>
+            <footer class="row-cols-1 align-items-center m-5">
+                <button class="btn btn-medium rounded-pill green mt-3" type="submit">Approve! (now we're cooking with peanut oil!!!)</button>
+                <button class="btn btn-medium rounded-pill red mt-5" type="submit">
+                    <b style="text-shadow: 1px 1px 1px black">
+                        Deny!!! (though seriously LTR Lending doesn't deny anyone, not sure why this is here) <span id="deny"></span>                    
+                    </b>
+                </button>
+            </footer>
+        </form>
+    </div>
+</body>
+</html>
