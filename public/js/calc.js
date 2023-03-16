@@ -29,7 +29,7 @@ function calcLoan (loanAmount, interestRate, monthlyPayments) {
     }
     monthlyPayments = convertYearstoMonths(monthlyPayments);
     
-    let loan = (interestRate * loanAmount)/(1-Math.pow(1+interestRate,-monthlyPayments))
+    let loan = (interestRate * loanAmount)/(1-Math.pow(1+interestRate,-monthlyPayments));
     return parseFloat(loan.toFixed(2));
 }
 
@@ -45,7 +45,7 @@ form.onsubmit = (e) => {
 
     console.log(loanAmount, interestRate.value, loanDuration.value);
     
-}
+};
 
 
 
