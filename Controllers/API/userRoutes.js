@@ -51,18 +51,19 @@ router.post('/login', async (req, res) => {
 // });
 
 // //post route - should work for when the user submits the loan
-// router.post('/', async (req, res) => {
-//   try {
-//     const newApplication = await Application.create({
-//       ...req.body,
-//       user_id: req.session.user_id,
-//     });
+router.post('/submit', async (req, res) => {
+  try {
+    const newApplication = await Application.create({
+      ...req.body,
+      user_id: req.session.user_id,
+    });
 
-//     res.status(200).json(newApplication);
-//   } catch (err) {
-//     res.status(400).json(err);
-//   }
-// });
+    // res.status(200).json(newApplication);
+    res.render('submitted');
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
 
 
 module.exports = router;
