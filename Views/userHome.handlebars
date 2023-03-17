@@ -6,24 +6,24 @@
         <h1>LTR Lending Application</h1>
     </header>
     
-    <form action="api/user/submit" method="post">
+    <form action="/api/user/submit" method="post">
       <main>
         <label for="name">First Name</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="first_name" required>
         <br>
         <label for="name">Last Name</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="last_name" required>
      <br>
         <label for="address">Address</label>
         <input type="text" id="address" name="address" required>
       <br>
-        <label for="DOB">SSN:</label> 
-        <input type="text" id="DOB" name="DOB"  placeholder ="---/--/----" required>
+        <label for="ssn">SSN:</label> 
+        <input type="text" id="ssn" name="ssn"  placeholder ="---/--/----" required>
      <br>
         
-        <label for="DOB">DOB:</label> 
+        {{!-- <label for="DOB">DOB:</label> 
         <input type="text" id="DOB" name="DOB"  placeholder ="MM/DD/YYYY" required>
-     <br>
+     <br> --}}
         <label for="income"> Income:</label>
         <input type="text" id="income" name="income" placeholder= "$" required>
 
@@ -31,7 +31,7 @@
          
           <body>
             <label for="range-input">Credit Score:</label>
-            <input type="range" id="range-input" name="range-input" min="300" max="850" value="425">
+            <input type="range" id="range-input" name="credit" min="300" max="850" value="425">
             <br>
             <span id="range-value"></span>
             <script>
@@ -46,16 +46,36 @@
         </html>
         
       <br>
-        <label for="loanType">Loan Type:</label>
-        <select id="loanType" name="loanType" required>
-          <option value="">Please select</option>
-          <option value="auto">Auto</option>
-          <option value="home">Home</option>
-          <option value="personal">Personal</option>
-        </select>
+        <label for="loan_type">Loan Type:</label>
+        <form action="#">
+    <p>
+      <label>
+        <input name="loan_type" type="radio" checked />
+        <span>Auto</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input name="loan_type" type="radio" />
+        <span>Home</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input class="with-gap" name="loan_type" type="radio"  />
+        <span>Personal</span>
+      </label>
+    </p>
+    {{!-- <p>
+      <label>
+        <input type="checkbox" name="loan_type" class="filled-in" />
+        <span>Auto</span>
+      </label>
+    </p> --}}
+        </form>
         <br>
         <label for="loanAmount">Amount Requested:</label>
-        <input type="text" id="loanAmount" name="loanAmount" placeholder= "$" required>
+        <input type="text" id="loanAmount" name="amount_requested" placeholder= "$" required>
         <br>
       
        <br>
@@ -66,3 +86,4 @@
     </main>
 
 </body>
+</html>
