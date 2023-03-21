@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Application, loanOfficer } = require('../../models');
+const { User, Application, loanOfficer } = require('../../Models');
 
 //using api/loanOfficer
 
