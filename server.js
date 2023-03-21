@@ -1,6 +1,6 @@
 const express = require('express');
 const session = require('express-session');
-const routes = require('./controllers');
+const routes = require('./Controllers');
 
 // Import express-handlebars
 const exphbs = require('express-handlebars');
