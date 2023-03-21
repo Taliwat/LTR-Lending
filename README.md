@@ -56,6 +56,6 @@ Github webpages: https://github.com/tnewnum - https://github.com/Taliwat - https
 Email us with any additional questions: thomas.newnum@gmail.com, kalpha1865@#gmail.com, londa807@gmail.com
 
 LINKS:
-Heroku:  https://git.heroku.com/floating-coast-52111.git
+Heroku:  https://floating-coast-52111.herokuapp.com/
 Github: https://github.com/Taliwat/LTR-Lending.git
 
