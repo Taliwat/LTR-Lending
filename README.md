@@ -54,3 +54,8 @@ Github Usernames: @tnewnum @Taliwat @LondaNH
 Github webpages: https://github.com/tnewnum - https://github.com/Taliwat - https://github.com/LondaNH
 
 Email us with any additional questions: thomas.newnum@gmail.com, kalpha1865@#gmail.com, londa807@gmail.com
+
+LINKS:
+Heroku:  https://floating-coast-52111.herokuapp.com/
+Github: https://github.com/Taliwat/LTR-Lending.git
+
