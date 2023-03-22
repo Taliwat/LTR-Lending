@@ -39,19 +39,7 @@ router.get('/calc', async (req, res) => {
   res.render('calc');
 });
 
-// // GET loan officer by ID
-// router.get('/:id', async (req, res) => {
-//   try {
-//     const loanOfficer = await LoanOfficer.findByPk(req.params.id);
-//     if (!loanOfficer) {
-//       return res.status(404).json({ error: 'Loan officer not found' });
-//     }
-//     res.json(loanOfficer);
-//   } catch (err) {
-//     console.error(err);
-//     res.status(500).json({ error: 'Server error' });
-//   }
-// });
+
 
 
 
